@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>My first three.js app</title>
+    <link rel="stylesheet" href="./src/style.css">
+  </head>
+  <body>
+    <!-- <canvas id="bg"></canvas> -->
+     <div id="background">
+      <div id="navbar">
+        <div id="logo">
+          <img src="./dunkel_white.png" alt="logo">
+        </div>
+        <ul>
+          <li><a href="#">Start</a></li>
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div id="start">
+        <canvas id="bg"></canvas>
+      </div>
+      <div id="profile">
+        <div id="social-things"></div>
+        <div id="softskills"></div>
+        <div id="bio"></div>
+        <div id="hardskills"></div>
+      </div>
+        <div id="projects">
+
+        </div>
+        <div id = "contact"></div>
+     </div>
+    <script type="module" src="./src/main.js"></script>
+    <script type="text/javascript">
+      window.addEventListener("scroll", function(){
+        var header = document.getElementById("navbar");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      })
+    </script>
+  </body>
+</html>
